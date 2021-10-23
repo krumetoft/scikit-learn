@@ -414,7 +414,6 @@ VALIDATE_ESTIMATOR_INIT = [
     "HalvingGridSearchCV",
     "KernelDensity",
     "KernelPCA",
-    "LabelBinarizer",
     "NuSVC",
     "NuSVR",
     "OneClassSVM",
