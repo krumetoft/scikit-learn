@@ -33,11 +33,7 @@ def test_factor_analysis():
     # generate observations
     # wlog, mean is 0
     X = np.dot(h, W) + noise
-    fa = FactorAnalysis(svd_method="foo")
-    with pytest.raises(ValueError):
-        fa.fit(X)
-    fa_fail = FactorAnalysis()
-    fa_fail.svd_method = "foo"
+    fa_fail = FactorAnalysis(svd_method="foo")
     with pytest.raises(ValueError):
         fa_fail.fit(X)
     fas = []
